@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     public GameObject Bullet;
     public Transform FirePoint;
-    public float BulletSpeed = 50f;
+    private float BulletSpeed = 50f;
 
-    public float moveSpeed = 5f;
+    private float moveSpeed = 10f;
+    private float rotationSpeed = 20f;
 
-    public float rotationSpeed = 10f;
-
-    public Rigidbody2D rb;
+    [SerializeField]
+    private Rigidbody2D Player;
 
     Vector2 movement;
 
@@ -44,6 +45,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        Player.MovePosition(Player.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }
