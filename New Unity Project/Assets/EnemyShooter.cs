@@ -21,6 +21,9 @@ public class EnemyShooter : MonoBehaviour
 
     private bool canShoot;
 
+    [SerializeField]
+    private float TimeBetweenBullet;
+
     Rigidbody2D rb;
     Vector2 TargetPosition;
 
@@ -62,24 +65,34 @@ public class EnemyShooter : MonoBehaviour
             
             if (hit.collider.gameObject.tag == "Walls")
             {
-                canShoot = false;
-              
+                return;
+
             }
             if(hit.collider.gameObject.tag == "Player")
             {
-                
+                canShoot = true;
+                //Shoot(angle);
 
             }
         }
         
     }
 
-    void Shoot(bool can)
+    void Shoot(float angle)
     {
-        while(can == true)
+        GameObject BulletClone = Instantiate(Bullet);
+        BulletClone.transform.position = FirePoint.position;
+        BulletClone.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        BulletClone.GetComponent<Rigidbody2D>().velocity = FirePoint.right * BulletSpeed;
+
+        StartCoroutine(CoolDown(TimeBetweenBullet));
+
+        IEnumerator CoolDown(float coolDown)
         {
-            
+            yield return new WaitForSeconds(coolDown);
         }
+        Update();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
