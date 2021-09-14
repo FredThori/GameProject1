@@ -49,7 +49,7 @@ public class EnemyShooter : MonoBehaviour
 
         TargetPosition = Target.position;
 
-        Vector2 AimAtPlayer = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+        Vector2 AimAtPlayer = TargetPosition - rb.position;
         float angle = Mathf.Atan2(AimAtPlayer.y, AimAtPlayer.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, rotationSpeed * Time.deltaTime);
