@@ -7,7 +7,8 @@ public class EnemyStats : MonoBehaviour
     public float EnemyHealth = 10;
     public float EnemyDamage;
 
-    public float DamageTaken;
+    [SerializeField]
+    private float DamageTaken;
 
 
     // Start is called before the first frame update
