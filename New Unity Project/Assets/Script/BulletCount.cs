@@ -15,6 +15,8 @@ public class BulletCount : MonoBehaviour
     public Image ReLoading;
     public Slider slider;
     public Image fill;
+
+    //Counting the number of bullets and enables the apporpriate pictures for it.
     public void NumberCount(int bullets)
     {
         if (bullets == 5)

@@ -23,7 +23,6 @@ public class PlayerMovement : MonoBehaviour
     public int BulletMax = 6;
     public int BulletCoolDown = 1;
     public float TimeBetween;
-    private float TimeDiffrence;
 
     private float maxTime;
 
@@ -91,6 +90,12 @@ public class PlayerMovement : MonoBehaviour
                 bulletCount.NumberCount(BulletCount);
 
             }
+
+            if (Input.GetKeyDown("r"))
+                {
+                    BulletCount -= BulletCount;
+                    bulletCount.NumberCount(BulletCount);
+                }
                
             }
             if (BulletCount == 0)

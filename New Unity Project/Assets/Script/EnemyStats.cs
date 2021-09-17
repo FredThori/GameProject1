@@ -40,6 +40,7 @@ public class EnemyStats : MonoBehaviour
        
     }
 
+    //Starts the animation for attack when player gets close
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

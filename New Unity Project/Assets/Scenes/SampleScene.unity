@@ -156,7 +156,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: -0.5460968, y: 0.051799774}
   m_SizeDelta: {x: -5.7355, y: -2.1725}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -523,6 +523,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &545041978
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545041971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.005556941, y: 0.36121404}
+  serializedVersion: 2
+  m_Radius: 1.1668569
 --- !u!1 &577817509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &945715217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2393,6 +2409,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7065141270974090786, guid: d749feae7b5b61443ada08dd0cb67356, type: 3}
   m_PrefabInstance: {fileID: 480029102}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1653531544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8497930451966139492, guid: d0eec414646406a45a89e0cce6c6eb38, type: 3}
+  m_PrefabInstance: {fileID: 8497930451172889775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1653531549
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653531544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6b1fc9c7f1eea04cafc16b00f367435, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1828919424
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,7 +2565,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
