@@ -4,54 +4,59 @@ using UnityEngine;
 
 public class EnemyShooter : MonoBehaviour
 {
+    //Enemy settings
     public float EnemyHealth = 10;
     public float EnemyDamage;
+    Rigidbody2D rb;
 
+    //Bullet settings
     public GameObject Bullet;
-    private float BulletSpeed = 50f;
-
+    private float BulletSpeed = 30f;
     [SerializeField]
     private float DamageTaken;
-
     public Transform FirePoint;
-
-    public Transform Target;
-
-    public LayerMask WorldLayer;
-
-    private bool canShoot;
-
-    [SerializeField]
-    private float TimeBetweenBullet;
-
-    Rigidbody2D rb;
-    Vector2 TargetPosition;
-
+    private Transform Target;
     [SerializeField]
     private int rotationSpeed;
 
+    //Bullet Time settings
+    private bool canShoot;
+    private float TimeBetweenBullet;
+    [SerializeField]
+    private float NSecondsBetweenBullet;
+
+    //Targets position in vector 2 math
+    Vector2 TargetPosition;
+
+    //In layer mask for what layer the enemy can see on
+    public LayerMask WorldLayer;
+
+    
+
     private void Start()
     {
-        Debug.LogWarning("Working");
-
+        //Get the rigibody of the enemy
         rb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
+        Target = GameObject.FindGameObjectWithTag("Player").transform;
+
         // Checking health
         if (EnemyHealth <= 0)
         {
             Destroy(gameObject);
         }
 
-        
+        //Creating a line towards the player that rotates the shooter towards him
         RaycastHit2D hit = Physics2D.Linecast(transform.position, Target.position, WorldLayer);
         Debug.DrawLine(transform.position, Target.position, Color.red);
 
         TargetPosition = Target.position;
 
+        //Specific rotation part
         Vector2 AimAtPlayer = TargetPosition - rb.position;
         float angle = Mathf.Atan2(AimAtPlayer.y, AimAtPlayer.x) * Mathf.Rad2Deg;
         Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
@@ -59,44 +64,39 @@ public class EnemyShooter : MonoBehaviour
 
         FirePoint.rotation = Quaternion.Euler(0, 0, angle);
 
-
+        //Checking if it its anything
         if (Physics2D.Linecast(transform.position, Target.position, WorldLayer))
         {
             
-            if (hit.collider.gameObject.tag == "Walls")
-            {
-                return;
-
-            }
+           
+            //Checking if it hits gameobject with the tag player
             if(hit.collider.gameObject.tag == "Player")
             {
-                canShoot = true;
-                //Shoot(angle);
 
+                //Cooldown between bullets
+                if (Time.time >= TimeBetweenBullet)
+                {
+                    //Sets the new time bettween buellts with the real time
+                    TimeBetweenBullet = NSecondsBetweenBullet + Time.time;
+
+                    //Creating bullet and shooting it away
+                    GameObject BulletClone = Instantiate(Bullet);
+
+                    BulletClone.transform.position = FirePoint.position;
+
+                    BulletClone.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+                    BulletClone.GetComponent<Rigidbody2D>().velocity = FirePoint.right * BulletSpeed;
+
+                }
             }
         }
         
     }
 
-    void Shoot(float angle)
-    {
-        GameObject BulletClone = Instantiate(Bullet);
-        BulletClone.transform.position = FirePoint.position;
-        BulletClone.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        BulletClone.GetComponent<Rigidbody2D>().velocity = FirePoint.right * BulletSpeed;
-
-        StartCoroutine(CoolDown(TimeBetweenBullet));
-
-        IEnumerator CoolDown(float coolDown)
-        {
-            yield return new WaitForSeconds(coolDown);
-        }
-        Update();
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        //Checks if its getting hit by a bullet and takes a bit of its health off.
         if (collision.gameObject.tag == "Bullet")
         {
             EnemyHealth -= DamageTaken;
