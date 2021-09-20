@@ -1,0 +1,599 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7053642177592244319
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3091405709423706995}
+  m_Layer: 0
+  m_Name: Sprites for second room
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3091405709423706995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053642177592244319}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.161366, y: 10.98347, z: -0.84723526}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8463411321444127606}
+  - {fileID: 7191753812691466646}
+  - {fileID: 2487300427059917433}
+  - {fileID: 932553448086011662}
+  - {fileID: 8267480940444513900}
+  - {fileID: 4386522250954964934}
+  - {fileID: 4626809375434583172}
+  - {fileID: 3803082225784376023}
+  - {fileID: 7503538308969958078}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &86708579194382383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &4386522250954964934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 86708579194382383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &653938264979447102
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &3803082225784376023 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 653938264979447102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2256489017082979728
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &2487300427059917433 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 2256489017082979728}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3541265453267757287
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &932553448086011662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 3541265453267757287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5233202009010209951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &8463411321444127606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 5233202009010209951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5724071130337747333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &8267480940444513900 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 5724071130337747333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6194118646997507415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &7503538308969958078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 6194118646997507415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6780802267522100863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &7191753812691466646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 6780802267522100863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9070734386653166445
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3091405709423706995}
+    m_Modifications:
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.84723526
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6947792782289858571, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+      propertyPath: m_Name
+      value: Floor in second room (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+--- !u!4 &4626809375434583172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4455188411088132073, guid: 83db3b58813c85c4787d4f91b07a5f96, type: 3}
+  m_PrefabInstance: {fileID: 9070734386653166445}
+  m_PrefabAsset: {fileID: 0}
