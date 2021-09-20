@@ -8,6 +8,7 @@ public class EnemyShooter : MonoBehaviour
     public float EnemyHealth = 10;
     public float EnemyDamage;
     Rigidbody2D rb;
+    public ParticleSystem Blood;
 
     //Bullet settings
     public GameObject Bullet;
@@ -31,12 +32,15 @@ public class EnemyShooter : MonoBehaviour
     //In layer mask for what layer the enemy can see on
     public LayerMask WorldLayer;
 
-    
+    private Animator Animation;
 
     private void Start()
     {
         //Get the rigibody of the enemy
         rb = GetComponent<Rigidbody2D>();
+        Animation = GetComponentInChildren<Animator>();
+        
+
     }
 
 
@@ -47,7 +51,10 @@ public class EnemyShooter : MonoBehaviour
         // Checking health
         if (EnemyHealth <= 0)
         {
+            ParticleSystem Bled = Instantiate(Blood);
+            Bled.transform.position = rb.position;
             Destroy(gameObject);
+            
         }
 
         //Creating a line towards the player that rotates the shooter towards him
@@ -72,13 +79,22 @@ public class EnemyShooter : MonoBehaviour
             //Checking if it hits gameobject with the tag player
             if(hit.collider.gameObject.tag == "Player")
             {
+                
+                
+                if (Time.time <= TimeBetweenBullet)
+                {
+                    Animation.SetTrigger("Waiting");
+                }
 
                 //Cooldown between bullets
                 if (Time.time >= TimeBetweenBullet)
                 {
+                    Animation.ResetTrigger("Waiting");
+
                     //Sets the new time bettween buellts with the real time
                     TimeBetweenBullet = NSecondsBetweenBullet + Time.time;
 
+                    Animation.SetTrigger("Shooting");
                     //Creating bullet and shooting it away
                     GameObject BulletClone = Instantiate(Bullet);
 
@@ -90,6 +106,11 @@ public class EnemyShooter : MonoBehaviour
 
                 }
             }
+            if (hit.collider.gameObject.tag == "Walls")
+            {
+                Animation.SetTrigger("Waiting");
+            }
+            
         }
         
     }

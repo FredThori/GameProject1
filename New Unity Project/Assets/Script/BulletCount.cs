@@ -48,18 +48,15 @@ public class BulletCount : MonoBehaviour
         {
            
             bullet1.enabled =false;
-            
+
+            bullet6.enabled = false;
+            bullet5.enabled = false;
+            bullet4.enabled = false;
+            bullet3.enabled = false;
+            bullet2.enabled = false;
+
         }
-        if (bullets == -1)
-        {
-            ReLoading.enabled = false;
-            bullet6.enabled = true;
-            bullet5.enabled = true;
-            bullet4.enabled = true;
-            bullet3.enabled = true;
-            bullet2.enabled = true;
-            bullet1.enabled = true;
-        }
+        
        
     }
 

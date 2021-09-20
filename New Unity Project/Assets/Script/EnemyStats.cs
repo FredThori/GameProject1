@@ -9,11 +9,14 @@ public class EnemyStats : MonoBehaviour
     public float EnemyDamage;
     [SerializeField]
     private float DamageTaken;
+    Rigidbody2D rb;
 
     private Animator Animation;
+    public ParticleSystem Blood;
 
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         Animation = GetComponentInChildren<Animator>();
     }
 
@@ -22,7 +25,10 @@ public class EnemyStats : MonoBehaviour
     {
         if (EnemyHealth <= 0)
         {
+            ParticleSystem Bled = Instantiate(Blood);
+            Bled.transform.position = rb.position;
             Destroy(gameObject);
+            
         }
 
         

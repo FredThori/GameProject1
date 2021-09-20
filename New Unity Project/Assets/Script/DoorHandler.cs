@@ -9,7 +9,7 @@ public class DoorHandler : MonoBehaviour
 
     private Animator DoorOpen;
 
-    private GameObject Hitbox;
+    private int TEST = 1;
 
     // At the start it gets its own animation component
     void Start()
@@ -27,7 +27,19 @@ public class DoorHandler : MonoBehaviour
         //Opens the door when it gets to zero
         if(UnitCount <= 0)
         {
-            DoorOpen.SetBool("DoorCanOpen", true);
+            if (TEST == 1) {
+                TEST++;
+                DoorOpen.SetBool("DoorCanOpen", true);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.LogError("Working");
+            DoorOpen.SetBool("DoorCanOpen", false);
 
         }
     }
