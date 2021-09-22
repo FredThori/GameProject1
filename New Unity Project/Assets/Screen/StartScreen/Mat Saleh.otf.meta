@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: d7c0c4701d9e6084d92c5268696cba70
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Mat Saleh
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b1db873398ec8154f99849b317e15cb4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
