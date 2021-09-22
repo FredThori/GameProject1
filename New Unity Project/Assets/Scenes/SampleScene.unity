@@ -11387,6 +11387,99 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95c775868bc2df44fbd08b9065400a0c, type: 3}
+--- !u!1 &578730336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578730337}
+  - component: {fileID: 578730340}
+  - component: {fileID: 578730339}
+  - component: {fileID: 578730338}
+  m_Layer: 0
+  m_Name: Checkpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578730337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578730336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25, y: 0.94, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 712584906}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578730338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578730336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549d434e67a092747a49339e18bd19e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NumberLevel: 0
+--- !u!50 &578730339
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578730336}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &578730340
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578730336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.1226645, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.234949, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &579974043
 GameObject:
   m_ObjectHideFlags: 0
@@ -14092,6 +14185,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10dad39a6491fd41bb07c8d017e70de, type: 3}
+--- !u!1 &712584905
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 712584906}
+  m_Layer: 0
+  m_Name: Checkpoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &712584906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712584905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.4042999, y: 15.326405, z: -8.735723}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 578730337}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &728479843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19741,7 +19865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIeyQnDoDUAIAAPMEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjTAKhtxYI6YHAhHRy8UVIa6xBljySHL6G/96VbGOXTk+I997uvt2VfCFC2QKY02ZhBF9qDuR7j/gz+dZryVc40p1WG3GGRvMpuMu8iAbNO3VCIz7wYVbn4IxgP9ROenGEYKlEqk0+5zuYausswimVFpAy2vlohdClR47405/4kBOe4rE/nfE0iXpXPDJQDkwrbYSNrFKVikmaF8C95VYcP0+avE+jIFTYTq3x1pmWUtjaC3GnIvS6KTIw4JvlgmJrof7gYYhABmKXOZ+wG71KUwuudmXoaSYMzqhKS37qanA5tfvK2heVpS/0HCxVKZf/sP1BoFOj89em6iDyFVwm2P6dnhi1rjPXLjzrGA/zOVC5p1sJnxmoN70wulQcSWdKH1paiGft31tj0wzYvsUrq3dgWfx/O76Ha+j9OJUi33rq4bECNlKHcYfdg8HF/ELD4WbYOgWi3sVvCx90171CNfEijHVI1V0qb2+rS+OlZB5m5rsp3VQbBQGuTRegqHSnNaZx9wu84zpl75gX6h9LXbzmmjdwFxLgVh9Fd9RaH27Lspk+LMFmq9JJoaA17Yk3nNNUK1Xdr+5MmrBNaVLKOmG7UvC/rxYZx+OYTSKWDqNtzB9HfTbZboeT+ImxEY/xsZBw94TCPqlcV0br8eDWVJtc4T1rviG9haFFuOvc0MNCnHPdGblQqd4wA6BWVYabcTBYBB8ln3OBA9qAc0KFfZNLQqRme+DJLVESOp0fnaFJmyUhhfjSziMJmYaPRkKu5PoHUEsDBBQAAAgIAAAIIewdiRetbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSuZG5UbKlQXKasUGSUYqJmW6yZVKSsaWRaXKyWYqRkamZUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIeyQnDoDUAIAAPMEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIewdiRetbQAAAHgAAAAJACQAAAAAAAAAAAAAAJ0CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAVQMAAAAA
+    dataString: UEsDBBQAAAgIAAAIIeyDe080UAIAAPQEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMziVjTAKhtxYI6YHAhHRy8UVIa6xBljySHL6G/96VbGOXTk+I997uvt2VfCFC2QKY02ZhBF9qDuR7j/gz+dZryVc40p1WG3GGRvMpuMu8iAbNO3VCIz7wYVbn4IxgP9ROenGEYKlEqk0+5zuYausswimVFpAy2vlohdClR47405/4kBOe4rE/nfE0iXpXPDJQDkwrbYSNrFKVikmaF8C95VYcP0+avE+jIFTYTq3x1pmWUtjaC3GnIvS6KTIw4JvlgmJrof7gYYhABmKXOZ+wG71KUwuudmXoaSYMzqhKS37qanA5tfvK2heVpS/0HCxVKZf/sP1BoFOj89em6iDyFVwm2P6dnhi1rjPXLjzrGA/zOVC5p1sJnxmoN70wulQcSWdKH1paiGft31tj0wzYvsUrq3dgWfx/O76Ha+j9OJUi33rq4bECNlKHcYfdg8HF/ELD4WbYOgWi3sVvCx90171CNfEijHVI1V0qb2+rS+OlZB5m5rsp3VQbBQGuTRegqHSnNaZx9wu84zpl75gX6h9LXbzmmjdwFxLgVh9Fd9RaH27Lspk+LMFmq9JJoaA17Yk3nNNUK1Xdr+5MmrBNaVLKOmG7UvC/rxYZx+OYTSKWDqNtzB9HfTbZboeT+ImxEY/xsZBw94TCPqlcV0br8eDWVJtc4T1rviG9haFFuOvc0MNCnHPdNShUqjfMAKhVleLmHAxWwVfJ51zghDbgnFBh4eSSEKnZHnhyq5mEVudHZ2jSZklIIb6080hCpuGrkZAruf4BUEsDBBQAAAgIAAAIIewdiRetbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM01VFQSi9KLMgoBooYgjilmSkgdrSSuZG5UbKlQXKasUGSUYqJmW6yZVKSsaWRaXKyWYqRkamZUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIeyDe080UAIAAPQEAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIewdiRetbQAAAHgAAAAJACQAAAAAAAAAAAAAAJ0CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAVQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -35765,6 +35889,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2532976988287845204, guid: 95c775868bc2df44fbd08b9065400a0c, type: 3}
   m_PrefabInstance: {fileID: 1893118762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1893393274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893393276}
+  - component: {fileID: 1893393275}
+  m_Layer: 0
+  m_Name: CheckpointMaster
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1893393275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893393274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4e403d7826cb4c4580d2004d0632664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!4 &1893393276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893393274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.292934, y: 18.525747, z: -9.515166}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1894800118
 PrefabInstance:
   m_ObjectHideFlags: 0
