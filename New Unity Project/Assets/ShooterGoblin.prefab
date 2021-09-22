@@ -40,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8497930451954971189}
   - component: {fileID: 8497930451954971188}
+  - component: {fileID: 428475188}
   m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
@@ -102,7 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: cb75f358c4c312e45a9dba20cc926d43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3ec521290520b94797bb11c772c86c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,6 +114,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &428475188
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497930451954971190}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6b1fc9c7f1eea04cafc16b00f367435, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8497930451966139492
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,7 +262,7 @@ MonoBehaviour:
   EnemyHealth: 8
   EnemyDamage: 0
   Blood: {fileID: 3614753690958324438, guid: 36647d510dfe7f8468003107612f00b0, type: 3}
-  Bullet: {fileID: 5723984454998057123, guid: ead009d3be3a0a949a8025467ece4fdd, type: 3}
+  Bullet: {fileID: 143300651919323978, guid: ea282b5235fa3e744902fe57742e45f4, type: 3}
   DamageTaken: 4
   FirePoint: {fileID: 8497930451936897800}
   rotationSpeed: 20
