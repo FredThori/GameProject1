@@ -61,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         //Bullet spawner rotaion following the rotation of the player
         FirePoint.rotation = Quaternion.Euler(0, 0, angle);
 
+        //Sending over the time to the UI so it can set the slider of loading to be precise
         if (Time.time <= TimeBetween)
         {
             
@@ -91,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
             }
 
+            //When pressing the r key it reloads and sends over the information to the UI
             if (Input.GetKeyDown("r"))
                 {
                     BulletCount -= BulletCount;
@@ -98,6 +100,8 @@ public class PlayerMovement : MonoBehaviour
                 }
                
             }
+
+            //Checks if the player is out or not of bullets and then reloads it with cooldown and sending over the information to UI
             if (BulletCount == 0)
             {
                 BulletCount += BulletMax;
