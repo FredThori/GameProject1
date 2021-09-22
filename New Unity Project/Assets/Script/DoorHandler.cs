@@ -29,8 +29,14 @@ public class DoorHandler : MonoBehaviour
         {
             if (TEST == 1) {
                 TEST++;
+               
                 DoorOpen.SetBool("DoorCanOpen", true);
             }
+        }
+        if(UnitCount > 0)
+        {
+            TEST = 1;
+            DoorOpen.SetBool("DoorCanOpen", false);
         }
     }
 
@@ -38,7 +44,7 @@ public class DoorHandler : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.LogError("Working");
+            
             DoorOpen.SetBool("DoorCanOpen", false);
 
         }
