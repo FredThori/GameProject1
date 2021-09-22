@@ -40,6 +40,7 @@ public class DoorHandler : MonoBehaviour
         }
     }
 
+    //Checking when the player walks over a trigger behind the door and closes it behind the player.
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
