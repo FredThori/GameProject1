@@ -21,15 +21,9 @@ public class Checkpoint : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         checkpoint = GameObject.Find("CheckpointMaster").GetComponent<CheckPointMaster>();
-        //trensform = GameObject.Find("PlayerSpawner").GetComponent<SpawnPlayer>();
+       
 
         self = rb.position;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,7 +31,7 @@ public class Checkpoint : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.LogError("Checkpoint reached with position:" + self + " on level " + NumberLevel);
-            //trensform.SetPosition(self);
+           
             checkpoint.SetTransform(self);
             checkpoint.SetLevel(NumberLevel);
         }

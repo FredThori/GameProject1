@@ -10,6 +10,8 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     [SerializeField] private Text ButtonText;
 
+    [SerializeField] private Color32 HoverColor;
+
     private Color FirstColor;
     private Outline LightOn;
 
@@ -24,7 +26,9 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     //Changing the color and enabeling the text outline when mouse is hovering over it
     public void OnPointerEnter(PointerEventData eventData)
     {
-        ButtonText.color = new Color32(215, 5, 242, 155);
+        ButtonText.color = HoverColor;
+
+                           
         LightOn.enabled = true;
 
     }

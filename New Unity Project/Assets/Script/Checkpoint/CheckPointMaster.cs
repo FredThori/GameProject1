@@ -21,9 +21,6 @@ public class CheckPointMaster : MonoBehaviour
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
-       
-
     }
 
     void Start()
@@ -36,7 +33,7 @@ public class CheckPointMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogError(Level);
+
         if (GameObject.FindGameObjectWithTag("Player"))
         {
             
@@ -44,7 +41,6 @@ public class CheckPointMaster : MonoBehaviour
             
             if (playerCheck == 1)
             {
-               
                 player.transform.position = Checkpoint;
                 playerCheck = 2;
             }
@@ -84,5 +80,13 @@ public class CheckPointMaster : MonoBehaviour
 
         SceneManager.LoadScene(Level);
 
+    }
+
+    public void MainMenu()
+    {
+        
+        SceneManager.LoadScene(0);
+
+        Destroy(gameObject);
     }
 }

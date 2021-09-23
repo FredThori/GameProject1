@@ -38,6 +38,9 @@ public class PlayerMovement : MonoBehaviour
 
     public BulletCount bulletCount;
 
+    [SerializeField] private AudioSource Gun;
+    
+
     private void Start()
     {
         BulletCount = BulletMax;
@@ -95,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 
                 BulletCount--;
+
+                    Gun.Play();
 
                 GameObject BulletClone = Instantiate(Bullet);
                 BulletClone.transform.position = FirePoint.position;

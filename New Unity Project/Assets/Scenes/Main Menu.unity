@@ -865,6 +865,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonText: {fileID: 1403309983}
+  HoverColor:
+    serializedVersion: 2
+    rgba: 2616329687
 --- !u!114 &1450579185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,6 +881,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonText: {fileID: 1403309983}
+  HoverColor:
+    serializedVersion: 2
+    rgba: 0
 --- !u!1 &1560072208
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,13 +910,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1560072208}
-  m_LocalRotation: {x: -0.028947007, y: -0.21935448, z: -0.12714753, w: 0.9668916}
+  m_LocalRotation: {x: -0.026164124, y: -0.21970376, z: -0.13939369, w: 0.9652021}
   m_LocalPosition: {x: 0, y: 0, z: 5.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1090139918}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -6.417, y: -24.8, z: -13.571}
+  m_LocalEulerAnglesHint: {x: -6.417, y: -24.8, z: -15.023}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 197.70001, y: 55.2}
@@ -971,6 +977,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1560072210}
+  TimeOn: 50
+  On:
+    serializedVersion: 2
+    rgba: 4278252799
   CoolDown: 1
 --- !u!1 &1570131533
 GameObject:
@@ -1093,7 +1103,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588185539}
   m_LocalRotation: {x: 0.0025055588, y: -0.059061162, z: 0.02415623, w: 0.99795896}
-  m_LocalPosition: {x: 0, y: 0, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0.155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1103082902}
@@ -1101,8 +1111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0.45, y: -6.763, z: 2.747}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.9, y: -68.1}
-  m_SizeDelta: {x: 214.2932, y: 53.6552}
+  m_AnchoredPosition: {x: 8.9172, y: -89.04519}
+  m_SizeDelta: {x: 214.2932, y: 95.595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588185541
 MonoBehaviour:
@@ -1126,7 +1136,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: cd1a86dd04b309a4a9775221f1b00c38, type: 3}
-    m_FontSize: 13
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1

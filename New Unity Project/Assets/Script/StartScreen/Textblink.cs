@@ -11,6 +11,10 @@ public class Textblink : MonoBehaviour
 
     private int timer;
 
+    [SerializeField] private int TimeOn;
+
+    [SerializeField] private Color32 On;
+
     private float timeBetweenBlink;
 
     [SerializeField] private float CoolDown;
@@ -41,10 +45,10 @@ public class Textblink : MonoBehaviour
 
     private void on()
     {
-        if (timer <= 100)
+        if (timer <= TimeOn)
         {
             timer++;
-            Text.color = Color.yellow;
+            Text.color = On;
         }
 
         else
