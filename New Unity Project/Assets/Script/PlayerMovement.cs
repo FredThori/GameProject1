@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     public int damage = 10;
     public int BulletDamage = 10;
+
+    [SerializeField] private int BossBulletDamage;
 
     public int BulletCount;
     public int BulletMax = 6;
@@ -60,6 +63,16 @@ public class PlayerMovement : MonoBehaviour
 
         //Bullet spawner rotaion following the rotation of the player
         FirePoint.rotation = Quaternion.Euler(0, 0, angle);
+
+        if (Input.GetKeyDown("q"))
+        {
+            currentHealth = 0;
+        }
+
+        if(currentHealth <= 0)
+        {
+            SceneManager.LoadScene(3);
+        }
 
         //Sending over the time to the UI so it can set the slider of loading to be precise
         if (Time.time <= TimeBetween)
@@ -132,6 +145,11 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             currentHealth -= BulletDamage;
+            healthBar.SetHealth(currentHealth);
+        }
+        if(collision.gameObject.tag == "BossBullet")
+        {
+            currentHealth -= BossBulletDamage;
             healthBar.SetHealth(currentHealth);
         }
     }

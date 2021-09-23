@@ -12,7 +12,7 @@ public class EnemyShooter : MonoBehaviour
 
     //Bullet settings
     public GameObject Bullet;
-    private float BulletSpeed = 30f;
+    [SerializeField] private float BulletSpeed;
     [SerializeField]
     private float DamageTaken;
     public Transform FirePoint;

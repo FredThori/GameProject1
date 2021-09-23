@@ -263,6 +263,7 @@ MonoBehaviour:
   EnemyDamage: 0
   Blood: {fileID: 3614753690958324438, guid: 36647d510dfe7f8468003107612f00b0, type: 3}
   Bullet: {fileID: 143300651919323978, guid: ea282b5235fa3e744902fe57742e45f4, type: 3}
+  BulletSpeed: 30
   DamageTaken: 4
   FirePoint: {fileID: 8497930451936897800}
   rotationSpeed: 20
