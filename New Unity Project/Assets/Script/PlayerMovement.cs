@@ -71,12 +71,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            currentHealth = 0;
+            SceneManager.LoadScene(5);
         }
 
         if(currentHealth <= 0)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(3);
         }
 
         //Sending over the time to the UI so it can set the slider of loading to be precise

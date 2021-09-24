@@ -810,7 +810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46425151}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3, y: 35.1, z: 22.83}
+  m_LocalPosition: {x: 1.3, y: 27.88, z: 22.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1395720455}
@@ -1217,6 +1217,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7352613735901890488, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7352613735901890489, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1224,6 +1228,14 @@ PrefabInstance:
     - target: {fileID: 7352613735901890489, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352613736056506627, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 151.09998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7352613736056506627, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 21.800049
       objectReference: {fileID: 0}
     - target: {fileID: 7352613736596381687, guid: 1e3d8fd6ce221644d83e83b6e8fb84c8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3258,6 +3270,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1795257419}
     m_Modifications:
+    - target: {fileID: 2219944178730681053, guid: 6546842aeb936ef43a22537b67896e2d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.0139556
+      objectReference: {fileID: 0}
+    - target: {fileID: 2219944178730681053, guid: 6546842aeb936ef43a22537b67896e2d, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.4269776
+      objectReference: {fileID: 0}
     - target: {fileID: 2252373095825149255, guid: 6546842aeb936ef43a22537b67896e2d, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -11601,7 +11621,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0, y: 0.06}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}

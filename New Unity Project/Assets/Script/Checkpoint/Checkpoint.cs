@@ -20,10 +20,13 @@ public class Checkpoint : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        checkpoint = GameObject.Find("CheckpointMaster").GetComponent<CheckPointMaster>();
-       
 
         self = rb.position;
+    }
+
+    private void Update()
+    {
+        checkpoint = GameObject.Find("CheckpointMaster").GetComponent<CheckPointMaster>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

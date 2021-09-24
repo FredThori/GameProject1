@@ -33,7 +33,7 @@ public class CheckPointMaster : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        DontDestroyOnLoad(gameObject);
         if (GameObject.FindGameObjectWithTag("Player"))
         {
             
@@ -84,7 +84,6 @@ public class CheckPointMaster : MonoBehaviour
 
     public void MainMenu()
     {
-        
         SceneManager.LoadScene(0);
 
         Destroy(gameObject);
