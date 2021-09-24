@@ -69,14 +69,14 @@ public class PlayerMovement : MonoBehaviour
         //Bullet spawner rotaion following the rotation of the player
         FirePoint.rotation = Quaternion.Euler(0, 0, angle);
 
-        if (Input.GetKeyDown("q"))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             currentHealth = 0;
         }
 
         if(currentHealth <= 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(5);
         }
 
         //Sending over the time to the UI so it can set the slider of loading to be precise

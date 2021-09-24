@@ -270,6 +270,7 @@ MonoBehaviour:
   rotationSpeed: 20
   NSecondsBetweenBullet: 1
   Shoot: {fileID: 5513691424932423477}
+  Death: {fileID: 8020360952286763551, guid: c53d3c715918dd04f96b49fa3043123a, type: 3}
   WorldLayer:
     serializedVersion: 2
     m_Bits: 9

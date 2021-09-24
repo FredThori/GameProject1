@@ -28,6 +28,8 @@ public class EnemyShooter : MonoBehaviour
 
     [SerializeField] AudioSource Shoot;
 
+    [SerializeField] AudioSource Death;
+
     //Targets position in vector 2 math
     Vector2 TargetPosition;
 
@@ -54,6 +56,8 @@ public class EnemyShooter : MonoBehaviour
         if (EnemyHealth <= 0)
         {
             ParticleSystem Bled = Instantiate(Blood);
+            AudioSource Dead = Instantiate(Death);
+            Dead.transform.position = rb.position;
             Bled.transform.position = rb.position;
             Destroy(gameObject);
             
