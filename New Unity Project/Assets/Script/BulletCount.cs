@@ -71,7 +71,7 @@ public class BulletCount : MonoBehaviour
     {
         slider.value = MaxTime;
 
-        if (slider.value <= 0.001)
+        if (slider.value <= 0.1)
         {
             ReLoading.enabled = false;
             bullet6.enabled = true;

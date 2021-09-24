@@ -14,6 +14,8 @@ public class EnemyStats : MonoBehaviour
     private Animator Animation;
     public ParticleSystem Blood;
 
+    [SerializeField] private AudioSource DeathSound;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,8 +27,10 @@ public class EnemyStats : MonoBehaviour
     {
         if (EnemyHealth <= 0)
         {
+            AudioSource Death = Instantiate(DeathSound);
             ParticleSystem Bled = Instantiate(Blood);
             Bled.transform.position = rb.position;
+            Death.transform.position = rb.position;
             Destroy(gameObject);
             
         }
