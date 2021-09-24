@@ -39,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     public BulletCount bulletCount;
 
     [SerializeField] private AudioSource Gun;
+
+    [SerializeField] AudioClip Hit;
     
 
     private void Start()
@@ -99,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
                 
                 BulletCount--;
 
-                    Gun.Play();
+                Gun.Play();
 
                 GameObject BulletClone = Instantiate(Bullet);
                 BulletClone.transform.position = FirePoint.position;
@@ -142,6 +144,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            Gun.PlayOneShot(Hit);
             currentHealth -= damage;
 
             healthBar.SetHealth(currentHealth);
@@ -149,11 +152,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "Bullet")
         {
+            Gun.PlayOneShot(Hit);
             currentHealth -= BulletDamage;
             healthBar.SetHealth(currentHealth);
         }
         if(collision.gameObject.tag == "BossBullet")
         {
+            Gun.PlayOneShot(Hit);
             currentHealth -= BossBulletDamage;
             healthBar.SetHealth(currentHealth);
         }

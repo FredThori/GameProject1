@@ -26,6 +26,8 @@ public class EnemyShooter : MonoBehaviour
     [SerializeField]
     private float NSecondsBetweenBullet;
 
+    [SerializeField] AudioSource Shoot;
+
     //Targets position in vector 2 math
     Vector2 TargetPosition;
 
@@ -46,7 +48,7 @@ public class EnemyShooter : MonoBehaviour
 
     void Update()
     {
-        Target = GameObject.FindGameObjectWithTag("Player").transform;
+        Target = GameObject.FindGameObjectWithTag("Player").transform; 
 
         // Checking health
         if (EnemyHealth <= 0)
@@ -95,6 +97,9 @@ public class EnemyShooter : MonoBehaviour
                     TimeBetweenBullet = NSecondsBetweenBullet + Time.time;
 
                     Animation.SetTrigger("Shooting");
+
+                    Shoot.Play();
+
                     //Creating bullet and shooting it away
                     GameObject BulletClone = Instantiate(Bullet);
 
