@@ -86,6 +86,7 @@ public class CheckPointMaster : MonoBehaviour
     {
         SceneManager.LoadScene(0);
 
+     
         Destroy(gameObject);
     }
 }
