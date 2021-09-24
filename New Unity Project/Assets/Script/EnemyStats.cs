@@ -10,9 +10,13 @@ public class EnemyStats : MonoBehaviour
     [SerializeField]
     private float DamageTaken;
     Rigidbody2D rb;
+    [SerializeField] AudioSource Attack;
+
 
     private Animator Animation;
     public ParticleSystem Blood;
+
+
 
     [SerializeField] private AudioSource DeathSound;
 
@@ -55,6 +59,7 @@ public class EnemyStats : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            Attack.Play();
             Animation.SetTrigger("Attack");
         }
     }
