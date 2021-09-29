@@ -38,13 +38,17 @@ public class EnemyShooter : MonoBehaviour
 
     private Animator Animation;
 
+
+    private SpriteRenderer EnemySprite;
+    private float CoolDownTimeHit;
+
     private void Start()
     {
         //Get the rigibody of the enemy
         rb = GetComponent<Rigidbody2D>();
         Animation = GetComponentInChildren<Animator>();
-        
 
+        EnemySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
 
@@ -121,7 +125,17 @@ public class EnemyShooter : MonoBehaviour
             }
             
         }
-        
+
+        if (Time.time <= CoolDownTimeHit)
+        {
+            EnemySprite.color = Color.red;
+        }
+
+        if (Time.time >= CoolDownTimeHit)
+        {
+            EnemySprite.color = Color.white;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -129,6 +143,8 @@ public class EnemyShooter : MonoBehaviour
         //Checks if its getting hit by a bullet and takes a bit of its health off.
         if (collision.gameObject.tag == "Bullet")
         {
+            CoolDownTimeHit = Time.time + 0.2f;
+
             EnemyHealth -= DamageTaken;
         }
     }

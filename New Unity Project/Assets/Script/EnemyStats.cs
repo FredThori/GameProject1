@@ -16,7 +16,8 @@ public class EnemyStats : MonoBehaviour
     private Animator Animation;
     public ParticleSystem Blood;
 
-
+    private SpriteRenderer EnemySprite;
+    private float CoolDownTimeHit;
 
     [SerializeField] private AudioSource DeathSound;
 
@@ -24,11 +25,18 @@ public class EnemyStats : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Animation = GetComponentInChildren<Animator>();
+
+        EnemySprite = GetComponentInChildren<SpriteRenderer>();
     }
 
     // Checks health
     void Update()
     {
+
+        
+
+        
+
         if (EnemyHealth <= 0)
         {
             AudioSource Death = Instantiate(DeathSound);
@@ -39,7 +47,16 @@ public class EnemyStats : MonoBehaviour
             
         }
 
-        
+        if (Time.time <= CoolDownTimeHit)
+        {
+            EnemySprite.color = Color.red;
+        }
+
+        if (Time.time >= CoolDownTimeHit)
+        {
+            EnemySprite.color = Color.white;
+        }
+
     }
 
     //Checks if it collides with the bullet and takes damage
@@ -47,6 +64,9 @@ public class EnemyStats : MonoBehaviour
     {
         if(collision.gameObject.tag == "Bullet")
         {
+            CoolDownTimeHit = Time.time + 0.2f;
+
+
             Animation.SetTrigger("Hit");
             EnemyHealth -= DamageTaken;
             

@@ -408,8 +408,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1570131534}
-  - {fileID: 1450579180}
   - {fileID: 1196607159}
+  - {fileID: 1450579180}
   - {fileID: 1560072209}
   - {fileID: 1103082902}
   m_Father: {fileID: 0}
@@ -513,7 +513,6 @@ GameObject:
   - component: {fileID: 1196607161}
   - component: {fileID: 1196607160}
   - component: {fileID: 1196607163}
-  - component: {fileID: 1196607164}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -528,17 +527,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196607158}
-  m_LocalRotation: {x: 0.0684032, y: 0.26813394, z: 0.06689486, w: 0.95861894}
-  m_LocalPosition: {x: 0, y: 0, z: 65.5}
+  m_LocalRotation: {x: 0.06774444, y: 0.26830113, z: 0.064540245, w: 0.95878035}
+  m_LocalPosition: {x: 0, y: 0, z: 67.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1862273521}
   m_Father: {fileID: 1090139918}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 5.467, y: 31.71, z: 9.537}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 5.467, y: 31.71, z: 9.256}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -134, y: -21.8}
+  m_AnchoredPosition: {x: -135, y: -11.4}
   m_SizeDelta: {x: 160, y: 50.2176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196607160
@@ -585,8 +584,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1196607164}
-        m_TargetAssemblyTypeName: Quit, Assembly-CSharp
+      - m_Target: {fileID: 1196607163}
+        m_TargetAssemblyTypeName: HoverTextBlink, Assembly-CSharp
         m_MethodName: EndGame
         m_Mode: 1
         m_Arguments:
@@ -644,22 +643,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1196607158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b5a34d7036eda142a8c33c2a66a83ec, type: 3}
+  m_Script: {fileID: 11500000, guid: 897794a0b8e56a84b96cddcc9a992daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonText: {fileID: 1862273522}
---- !u!114 &1196607164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196607158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036c262ec23df164ca7f09b355d451b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  HoverColor:
+    serializedVersion: 2
+    rgba: 4278190335
+  On:
+    serializedVersion: 2
+    rgba: 4278190335
+  TimeOn: 40
+  CoolDown: 7
 --- !u!1 &1403309980
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,7 +666,6 @@ GameObject:
   - component: {fileID: 1403309981}
   - component: {fileID: 1403309984}
   - component: {fileID: 1403309983}
-  - component: {fileID: 1403309982}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -686,33 +680,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1403309980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0000000055879354, y: 0.000000029802322, z: -0.011229646, w: 0.99993694}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000011197321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1450579180}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.287}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -0.0000019073486}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1403309982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1403309980}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.84313726, g: 0.019607844, b: 0.9490196, a: 0.5}
-  m_EffectDistance: {x: 2, y: -1}
-  m_UseGraphicAlpha: 0
 --- !u!114 &1403309983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.14901961, g: 0.15294118, b: 0.3647059, a: 1}
+  m_Color: {r: 0.10982277, g: 0.20754719, b: 0.10083661, a: 0.57254905}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -764,7 +743,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1450579180}
-  - component: {fileID: 1450579185}
   - component: {fileID: 1450579183}
   - component: {fileID: 1450579182}
   - component: {fileID: 1450579181}
@@ -783,14 +761,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450579179}
-  m_LocalRotation: {x: 0.013460211, y: 0.4589051, z: 0.08658321, w: -0.88415396}
+  m_LocalRotation: {x: 0.021608343, y: 0.4585937, z: 0.07086679, w: -0.8855523}
   m_LocalPosition: {x: 0, y: 0, z: 87.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1403309981}
   m_Father: {fileID: 1090139918}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -5.927, y: -54.44, z: -8.135}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -5.927, y: -54.44, z: -6.1}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -19, y: -24.8}
@@ -840,8 +818,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1450579185}
-        m_TargetAssemblyTypeName: ButtonHover, Assembly-CSharp
+      - m_Target: {fileID: 1450579184}
+        m_TargetAssemblyTypeName: HoverTextBlink, Assembly-CSharp
         m_MethodName: StartScene
         m_Mode: 1
         m_Arguments:
@@ -899,29 +877,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450579179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572b8247e42de9a43a39991fe4d3f67f, type: 3}
+  m_Script: {fileID: 11500000, guid: 897794a0b8e56a84b96cddcc9a992daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ButtonText: {fileID: 1403309983}
   HoverColor:
     serializedVersion: 2
-    rgba: 2616329687
---- !u!114 &1450579185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450579179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 572b8247e42de9a43a39991fe4d3f67f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonText: {fileID: 1403309983}
-  HoverColor:
+    rgba: 4278255379
+  On:
     serializedVersion: 2
-    rgba: 0
+    rgba: 4278255379
+  TimeOn: 50
+  CoolDown: 2
 --- !u!1 &1560072208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,11 +982,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text: {fileID: 1560072210}
-  TimeOn: 50
+  TimeOn: 500
   On:
     serializedVersion: 2
     rgba: 4278252799
-  CoolDown: 1
+  CoolDown: 0.5
 --- !u!1 &1570131533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,7 +1281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22352943, g: 0.1254902, b: 0.2901961, a: 1}
+  m_Color: {r: 0.254717, g: 0.073291205, b: 0.09029987, a: 0.59607846}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

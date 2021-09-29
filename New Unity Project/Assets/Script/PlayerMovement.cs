@@ -41,15 +41,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource Gun;
 
     [SerializeField] AudioClip Hit;
-    
+
+    private SpriteRenderer PlayerSprite;
+    private float CoolDownTimeHit;
 
     private void Start()
     {
+
+        PlayerSprite = GetComponent<SpriteRenderer>();
+
+
         BulletCount = BulletMax;
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
 
         bulletCount = GameObject.Find("Bullet Count").GetComponent<BulletCount>();
+
+
     }
 
 
@@ -129,9 +137,18 @@ public class PlayerMovement : MonoBehaviour
                 
                 bulletCount.SetLoading(BulletCoolDown);
             }
+
         }
 
-        
+        if (Time.time <= CoolDownTimeHit)
+        {
+            PlayerSprite.color = Color.red;
+        }
+        if (Time.time >= CoolDownTimeHit)
+        {
+            PlayerSprite.color = Color.white;
+        }
+
     }
 
     //Moves the character
@@ -147,17 +164,25 @@ public class PlayerMovement : MonoBehaviour
             Gun.PlayOneShot(Hit);
             currentHealth -= damage;
 
+            CoolDownTimeHit = Time.time + 0.2f;
+
             healthBar.SetHealth(currentHealth);
         }
 
         if (collision.gameObject.tag == "Bullet")
         {
+            CoolDownTimeHit = Time.time + 0.2f;
+
             Gun.PlayOneShot(Hit);
             currentHealth -= BulletDamage;
             healthBar.SetHealth(currentHealth);
+
+
         }
         if(collision.gameObject.tag == "BossBullet")
         {
+            CoolDownTimeHit = Time.time + 0.2f;
+
             Gun.PlayOneShot(Hit);
             currentHealth -= BossBulletDamage;
             healthBar.SetHealth(currentHealth);
