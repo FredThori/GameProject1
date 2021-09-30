@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
@@ -52,11 +53,26 @@ public class PlayerMovement : MonoBehaviour
 
     public HealthKit healthKits;
 
+    [SerializeField] private Text checkpoint;
+    private float checkpointTimer;
+
+    [SerializeField] private Image Lights;
+
+    [SerializeField] private AudioClip LightTurning;
+    private static int sound;
+    private static int sound2;
+
+    [SerializeField] private GameObject Pause;
+
+    private bool CanShoot;
+
     private void Start()
     {
+        Pause.SetActive(false);
 
         PlayerSprite = GetComponent<SpriteRenderer>();
 
+        CanShoot = true;
 
         healthKitCount = maxHealthKit;
 
@@ -73,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
     //Move controls and shoot script
     void Update()
     {
+        
         movement.x = Input.GetAxisRaw("Horizontal");
 
         movement.y = Input.GetAxisRaw("Vertical");
@@ -88,7 +105,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(5);
+            CanShoot = false;
+            Pause.SetActive(true);
+            Time.timeScale = 0f;
         }
 
         if(currentHealth <= 0)
@@ -100,13 +119,40 @@ public class PlayerMovement : MonoBehaviour
             
         }
 
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length > 0)
+        {
+            sound2 = 1;  
+            Lights.enabled = true;
+
+            if (sound == 1)
+            {
+                Gun.PlayOneShot(LightTurning);
+                sound++;
+            }
+        }
+
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            sound = 1;
+            Lights.enabled = false;
+
+            if (sound2 == 1)
+            {
+                Gun.PlayOneShot(LightTurning);
+                sound2++;
+            }
+        }
+
+        if (checkpointTimer < Time.time)
+        {
+            checkpoint.enabled = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
            if(healthKitCount > 0)
             {
                 currentHealth += HealthGain;
-
-                Debug.LogError("Healed this much " + HealthGain + " so health is now " + currentHealth);
 
                 healthKitCount--;
 
@@ -130,7 +176,7 @@ public class PlayerMovement : MonoBehaviour
 
             bulletCount.NumberCount(BulletCount);
 
-            if (BulletCount >= 1)
+            if (BulletCount >= 1 && CanShoot == true)
             {
             //Creats the bullet and shoots it with predefined speed
             if (Input.GetMouseButtonDown(0))
@@ -220,5 +266,27 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            checkpointTimer = Time.time + 1f;
+            checkpoint.enabled = true;
+        }
+    }
+
+
+
+    public void UnpauseTime()
+    {
+        Pause.SetActive(false);
+        Time.timeScale = 1f;
+        CanShoot = true;
+    }
+
+    public void MainScreen()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
 }

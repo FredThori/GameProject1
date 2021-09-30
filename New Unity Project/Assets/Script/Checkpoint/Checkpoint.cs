@@ -12,8 +12,6 @@ public class Checkpoint : MonoBehaviour
 
     private CheckPointMaster checkpoint;
 
-    private SpawnPlayer trensform;
-
     Rigidbody2D rb;
 
 
@@ -37,6 +35,8 @@ public class Checkpoint : MonoBehaviour
            
             checkpoint.SetTransform(self);
             checkpoint.SetLevel(NumberLevel);
+
+            Destroy(gameObject);
         }
     }
 }

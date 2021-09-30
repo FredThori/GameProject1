@@ -25,7 +25,7 @@ public class DoorHandler : MonoBehaviour
         UnitCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
 
         //Opens the door when it gets to zero
-        if(UnitCount <= 0)
+        if(UnitCount <= 0 && GameObject.FindGameObjectWithTag("Boss") == false)
         {
             if (TEST == 1) {
                 TEST++;
@@ -37,6 +37,7 @@ public class DoorHandler : MonoBehaviour
         {
             TEST = 1;
             DoorOpen.SetBool("DoorCanOpen", false);
+
         }
     }
 

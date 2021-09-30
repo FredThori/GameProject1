@@ -210,7 +210,7 @@ MonoBehaviour:
   EnemyHealth: 8
   EnemyDamage: 0
   Blood: {fileID: 3614753690958324438, guid: 36647d510dfe7f8468003107612f00b0, type: 3}
-  Bullet: {fileID: 143300651919323978, guid: ea282b5235fa3e744902fe57742e45f4, type: 3}
+  Bullet: {fileID: 6051447689211948059, guid: 82409ea47fec631489fa595ec8037f0d, type: 3}
   BulletSpeed: 30
   DamageTaken: 4
   FirePoint: {fileID: 8497930451936897800}
@@ -252,7 +252,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7c19d6fddd62d7f4b9a15474d90646a7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 862b26aa3a9008f49979bc71dde6a53a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

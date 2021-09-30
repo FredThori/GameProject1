@@ -11,6 +11,7 @@ TagManager:
   - Delete
   - Boss
   - BossBullet
+  - BossHealthBar
   layers:
   - Default
   - TransparentFX
