@@ -45,11 +45,20 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer PlayerSprite;
     private float CoolDownTimeHit;
 
+    private static int healthKitCount;
+    private static int maxHealthKit = 3;
+
+    [SerializeField] private int HealthGain;
+
+    public HealthKit healthKits;
+
     private void Start()
     {
 
         PlayerSprite = GetComponent<SpriteRenderer>();
 
+
+        healthKitCount = maxHealthKit;
 
         BulletCount = BulletMax;
         currentHealth = maxHealth;
@@ -84,7 +93,27 @@ public class PlayerMovement : MonoBehaviour
 
         if(currentHealth <= 0)
         {
+            
+            
             SceneManager.LoadScene(3);
+            
+            
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+           if(healthKitCount > 0)
+            {
+                currentHealth += HealthGain;
+
+                Debug.LogError("Healed this much " + HealthGain + " so health is now " + currentHealth);
+
+                healthKitCount--;
+
+                healthBar.SetHealth(currentHealth);
+
+                healthKits.HealthKitCount(healthKitCount);
+            }
         }
 
         //Sending over the time to the UI so it can set the slider of loading to be precise
@@ -157,6 +186,8 @@ public class PlayerMovement : MonoBehaviour
         Player.MovePosition(Player.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -188,4 +219,6 @@ public class PlayerMovement : MonoBehaviour
             healthBar.SetHealth(currentHealth);
         }
     }
+
+   
 }

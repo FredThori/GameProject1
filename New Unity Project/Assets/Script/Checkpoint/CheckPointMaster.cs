@@ -17,6 +17,7 @@ public class CheckPointMaster : MonoBehaviour
 
     private static int restart;
     private static int playerCheck;
+    private static int firstRestart;
 
     private void Awake()
     {
@@ -52,11 +53,8 @@ public class CheckPointMaster : MonoBehaviour
 
                 Destroy(fakeScript);
             }
+
         }
-
-        
-
-        
 
     }
 
@@ -82,11 +80,15 @@ public class CheckPointMaster : MonoBehaviour
 
     }
 
+   
+
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
 
-     
-        Destroy(gameObject);
+        Level = 0;
+
+        Checkpoint = new Vector3(0, -6.17f);
+
     }
 }

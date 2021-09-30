@@ -7,10 +7,10 @@ public class DestroyMaster : MonoBehaviour
     
     
     // Update is called once per frame
-    void Update()
-    {
-        GameObject checkpoint = GameObject.Find("CheckpointMaster");
-        Destroy(checkpoint);
+    //void Update()
+    //{
+    //    GameObject checkpoint = GameObject.Find("CheckpointMaster");
+    //    Destroy(checkpoint);
         
-    }
+    //}
 }
